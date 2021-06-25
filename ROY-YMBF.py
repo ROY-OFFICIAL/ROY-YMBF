@@ -678,7 +678,7 @@ class ngewe:
 		if ___yayanganteng___ in(""," "):
 			print("\n %s[%s×%s] Isi yang benar"%(N,M,N));self.plerr()
 		elif ___yayanganteng___ in("Y","y"):
-			print ('\n %s[%s!%s] Gunakan , (koma) untuk pemisah contoh : %sroy123,roy12345'%(N,M,N))
+			print ('\n %s[%s!%s] Gunakan , (koma) untuk pemisah contoh : %sroy123,roy12345'%(N,M,N,K))
 			while True:
 				pwek=input('\n %s[%s?%s] Masukan kata sandi : '%(N,K,N))
 				if pwek in(""," "):
