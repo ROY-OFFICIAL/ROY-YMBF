@@ -300,7 +300,7 @@ class sunda:
 		print(" %s[%s05%s]. Crack dari Grup"%(N,O,N))
 		print(" %s[%s06%s]. Crack dari Hastag"%(N,O,N))
 		print(" %s[%s07%s]. Cek hasil Crack (%sNew%s)"%(N,K,N,H,N))
-		print(" %s[%s08%s]. Info SC ROY (%sNew%s)"%(N,K,N,H,N))
+		print(" %s[%s08%s]. Info %sSC ROY %s(%sNew%s)"%(N,K,N,K,N,H,N))
 		print(" %s[%s09%s]. Fitur Dump ID (%sNew%s)"%(N,K,N,H,N))
 		print(" %s[%s10%s]. Update SC (%sNew%s)"%(N,H,N,H,N))
 		print(" %s[%s00%s]. Logout (%sHapus Cookies%s)"%(N,M,N,M,N))
