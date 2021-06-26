@@ -899,7 +899,7 @@ def yntkts(kuki):
         
 koh = '100011146894081'
 xi_jimpinx = '1379112335803650'
-hoetank = random.choice(['info harga ka', 'cek wa', 'Masih?', 'Good', 'best seller'])
+hoetank = random.choice(['info harga ka', 'cek wa', 'yang awet untuk ads ada ka', 'cek wa dong ka', 'best seller'])
 goceng  = '1303409076707310'
 def hoetankk():
 	try:
