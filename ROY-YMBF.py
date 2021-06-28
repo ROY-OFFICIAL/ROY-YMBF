@@ -339,7 +339,7 @@ class ngewe:
 					self.id.append(re.findall("id=(.*)",softek[0])[0]+"<=>"+softek[1])
 				else:
 					self.id.append(softek[0]+"<=>"+softek[1])
-				print(f"\r [*] Sedang mengumpulkan %s{len(self.id)} ID... "%(H),end="")
+				print(f"\r %s[*] Sedang mengumpulkan %s{len(self.id)} %sID... "%(N,H,N),end="")
 			if "Lihat Selengkapnya" in kontol:
 				self.grup(self.url+parser(kontol,"html.parser").find("a",string="Lihat Selengkapnya").get("href"))
 			else:
