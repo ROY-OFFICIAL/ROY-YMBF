@@ -325,7 +325,7 @@ class ngewe:
 					self.id.append(re.findall("(.*?)\?refid=",softek[0])[0]+"<=>"+softek[1])
 				else:
 					self.id.append(softek[0]+"<=>"+softek[1])
-				print(f"\r [*] Sedang mengumpulkan {len(self.id)} ID... ",end="")
+				print(f"\r [*] Sedang mengumpulkan %s{len(self.id)} ID... "%(H),end="")
 			if "Lihat Selengkapnya" in kontol:
 				self.folower(self.url+parser(kontol,"html.parser").find("a",string="Lihat Selengkapnya").get("href"))
 		except:pass
