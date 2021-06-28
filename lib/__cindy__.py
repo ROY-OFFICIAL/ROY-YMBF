@@ -1,6 +1,6 @@
 pw_tambahan="""
 
-bismillah|sayang|bangsat|anjing|kontol
+bismillah|sayang|anjing|kontol|indonesia
 
 """.strip().split("|")
 ngntd=((())>(()))+((())>(()))
