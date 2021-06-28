@@ -285,7 +285,7 @@ class sunda:
 		print(f" [⭐] Facebook    : {K}facebook/JbFbOld{N}")
 		print(f" [⭐] WhatsApp    : {K}+6281318306972{N}")
 		print( 50 * '=')
-		print(f" {N}[ Selamat datang {K}{nama}{N} ]")
+		print(f" {N}[ Selamat datang {K}{nama}{N} ] ")
 		print( 50 * '=')
 		print(f" [⭐] ID FB Anda   : {K}{idfb}{N}")
 		print(f" [⭐] IP Anda      : {K}{IP}{N}")
