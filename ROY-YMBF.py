@@ -325,7 +325,7 @@ class ngewe:
 					self.id.append(re.findall("(.*?)\?refid=",softek[0])[0]+"<=>"+softek[1])
 				else:
 					self.id.append(softek[0]+"<=>"+softek[1])
-				print(f"\r %s[*] Sedang mengumpulkan %s{len(self.id)} %sID... ",end=""%(N,H,N))
+				print(f"\r [*] Sedang mengumpulkan {len(self.id)} ID... ",end="")
 			if "Lihat Selengkapnya" in kontol:
 				self.folower(self.url+parser(kontol,"html.parser").find("a",string="Lihat Selengkapnya").get("href"))
 		except:pass
@@ -394,7 +394,7 @@ class ngewe:
 					self.id.append(re.findall("uid\=(.*?)\&",softek[0])[0]+"<=>"+softek[1])
 				else:
 					self.id.append(re.findall("\/(.*?)\?fref",softek[0])[0]+"<=>"+softek[1])
-				print(f"\r [*] Sedang mengumpulkan {len(self.id)} ID... ",end="")
+				print(f"\r %s[*] Sedang mengumpulkan %s{len(self.id)} %sID... ",end=""%(N,H,N))
 			if "Lihat selengkapnya" in kontol:
 				self.teman(self.url+parser(kontol,"html.parser").find("a",string="Lihat selengkapnya").get("href"))
 		except:pass
